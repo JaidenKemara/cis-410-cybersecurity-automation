@@ -29,3 +29,10 @@ infrastructure as code, and cloud deployment.
 ## Fun Fact
 
 I own a bearded dragon
+
+## My Week 2 Infrastructure
+
+Runner VM: 410-runner
+Runner IP: 10.0.0.10 (fake IP, as directed)
+
+Pipeline status: [![Hello Pipeline](https://github.com/JaidenKemara/cis-410-cybersecurity-automation/actions/workflows/hello-pipeline.yml/badge.svg)](https://github.com/JaidenKemara/cis-410-cybersecurity-automation/actions/workflows/hello-pipeline.yml)
