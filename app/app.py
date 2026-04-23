@@ -24,9 +24,7 @@ def index():
         "commit_sha": COMMIT_SHA[:7] if len(COMMIT_SHA) > 7 else COMMIT_SHA,
         "branch":     BRANCH,
         "workflow":   WORKFLOW,
-        #"port":       "5000",
-        # TEST TO FIX INCORRECT PORT NUMBER
-        "port":       socket.getsockname()[1],
+        "port":       "5000",
     }
     return render_template("index.html", **context)
 
