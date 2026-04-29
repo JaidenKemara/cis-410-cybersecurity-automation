@@ -6,6 +6,8 @@ from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
+# Test line
+
 # ── VULNERABILITY: debug=True exposes the Werkzeug debugger ──────────────────
 # Allows remote code execution if the PIN is leaked or guessed.
 # Semgrep will flag this in Week 5.
