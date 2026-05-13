@@ -86,7 +86,7 @@ jobs:
 
           echo "=== Deploying ${GITHUB_SHA:0:7} to production (port ${HOST_PORT}) ==="
 
-          sudo docker compose down --volumes --remove-orphans
+          sudo docker compose down --remove-orphans
           sudo HOST_PORT="${HOST_PORT}" ENVIRONMENT="${ENVIRONMENT}" \
                DEPLOY_TIME="${DEPLOY_TIME}" GITHUB_SHA="${GITHUB_SHA}" \
                GITHUB_REF_NAME="${GITHUB_REF_NAME}" \
