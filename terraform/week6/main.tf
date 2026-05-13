@@ -40,6 +40,7 @@ resource "google_storage_bucket" "tf_state" {
   location      = "US"
   force_destroy = true
 
+  uniform_bucket_level_access = true
   versioning {
     enabled = true
   }
@@ -61,6 +62,8 @@ resource "google_storage_bucket" "logs" {
   name          = "${var.project_id}-logs"
   location      = "US"
   force_destroy = true
+
+  uniform_bucket_level_access = true
 
   lifecycle_rule {
     condition {
